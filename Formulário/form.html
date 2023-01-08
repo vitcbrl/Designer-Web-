@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulário</title>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/form-validation.css" rel="stylesheet">
+  <link href="css/datepicker.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="imgs/logo.png" alt="" width="75" height="88">
+      <h2>Não encontrou o que procurava?</h2>
+      <p class="lead">Preencha o formulário e retornaremos o contato.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <form class="needs-validation" novalidate="">
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <label for="primeiroNome">Nome Completo</label>
+              <input type="text" class="form-control" id="primeiroNome" value="" required="">
+              <div class="invalid-feedback">
+                É obrigatório inserir um nome válido.
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" value="" required="">
+              <div class="invalid-feedback">
+                Por favor, insira um endereço de e-mail válido.
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="telefone">Telefone</label>
+              <input type="text" class="form-control" id="telefone" required="">
+              <div class="invalid-feedback">
+                Por favor, insira um telefone válido.
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="data-de-nascimento">Data de Nascimento</label>
+              <input type="text" class="form-control" id="data-de-nascimento" required="">
+              <div class="invalid-feedback">
+                Por favor, insira uma data válida.
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="bairro">Bairro de interesse</label>
+              <select class="custom-select d-block w-100" id="bairro">
+                <option value="">Escolha...</option>
+                <option>Bairro Imperial de São Cristóvão</option>
+                <option>Benfica</option>
+                <option>Caju</option>
+                <option>Catumbi</option>
+                <option>Centro</option>
+                <option>Cidade Nova</option>
+                <option>Estácio</option>
+                <option>Gamboa</option>
+                <option>Glória</option>
+                <option>Lapa</option>
+                <option>Mangueira</option>
+                <option>Paquetá</option>
+                <option>Rio Comprido</option>
+                <option>Santa Teresa</option>
+                <option>Santo Cristo</option>
+                <option>Saúde</option>
+                <option>Vasco da Gama</option>
+                <option>Botafogo</option>
+                <option>Catete</option>
+                <option>Copacabana</option>
+                <option>Cosme Velho</option>
+                <option>Flamengo</option>
+                <option>Gávea</option>
+                <option>Humaitá</option>
+                <option>Ipanema</option>
+                <option>Jardim Botânico</option>
+                <option>Lagoa</option>
+                <option>Laranjeiras</option>
+                <option>Leblon</option>
+                <option>Leme</option>
+                <option>Rocinha</option>
+                <option>São Conrado</option>
+                <option>Urca</option>
+                <option>Vidigal</option>
+                <option>Barra da Tijuca e Baixada de Jacarepaguá</option>
+                <option>Anil</option>
+                <option>Barra da Tijuca</option>
+                <option>Camorim</option>
+                <option>Cidade de Deus</option>
+                <option>Curicica</option>
+                <option>Freguesia de Jacarepaguá</option>
+                <option>Gardênia Azul</option>
+                <option>Grumari</option>
+                <option>Itanhangá</option>
+                <option>Jacarepaguá</option>
+                <option>Joá</option>
+                <option>Praça Seca</option>
+                <option>Pechincha</option>
+                <option>Recreio dos Bandeirantes</option>
+                <option>Tanque</option>
+                <option>Taquara</option>
+                <option>Vargem Grande</option>
+                <option>Vargem Pequena</option>
+                <option>Vila Valqueire</option>
+                <option>Grande Bangu</option>
+                <option>Bangu</option>
+                <option>Deodoro</option>
+                <option>Gericinó</option>
+                <option>Jardim Sulacap</option>
+                <option>Magalhães Bastos</option>
+                <option>Padre Miguel</option>
+                <option>Realengo</option>
+                <option>Santíssimo</option>
+                <option>Senador Camará</option>
+                <option>Vila Kennedy</option>
+                <option>Vila Militar</option>
+                <option>Barra de Guaratiba</option>
+                <option>Campo Grande</option>
+                <option>Cosmos</option>
+                <option>Guaratiba</option>
+                <option>Inhoaíba</option>
+                <option>Paciência</option>
+                <option>Pedra de Guaratiba</option>
+                <option>Santa Cruz</option>
+                <option>Senador Vasconcelos</option>
+                <option>Sepetiba</option>
+                <option>Grande Tijuca</option>
+                <option>Alto da Boa Vista</option>
+                <option>Andaraí</option>
+                <option>Grajaú</option>
+                <option>Maracanã</option>
+                <option>Praça da Bandeira</option>
+                <option>Tijuca</option>
+                <option>Vila Isabel</option>
+                <option>Grande Méier</option>
+                <option>Abolição</option>
+                <option>Água Santa</option>
+                <option>Cachambi</option>
+                <option>Del Castilho</option>
+                <option>Encantado</option>
+                <option>Engenho de Dentro</option>
+                <option>Engenho Novo</option>
+                <option>Higienópolis</option>
+                <option>Jacaré</option>
+                <option>Jacarezinho</option>
+                <option>Lins de Vasconcelos</option>
+                <option>Manguinhos</option>
+                <option>Maria da Graça</option>
+                <option>Méier</option>
+                <option>Piedade</option>
+                <option>Pilares</option>
+                <option>Riachuelo</option>
+                <option>Rocha</option>
+                <option>Sampaio</option>
+                <option>São Francisco Xavier</option>
+                <option>Todos os Santos</option>
+                <option>Ilha do Governador e Leopoldina</option>
+                <option>Bonsucesso</option>
+                <option>Bancários</option>
+                <option>Cacuia</option>
+                <option>Cidade Universitária</option>
+                <option>Cocotá</option>
+                <option>Freguesia</option>
+                <option>Galeão</option>
+                <option>Jardim Carioca</option>
+                <option>Jardim Guanabara</option>
+                <option>Maré</option>
+                <option>Moneró</option>
+                <option>Olaria</option>
+                <option>Pitangueiras</option>
+                <option>Portuguesa</option>
+                <option>Praia da Bandeira</option>
+                <option>Ramos</option>
+                <option>Ribeira</option>
+                <option>Tauá</option>
+                <option>Zumbi</option>
+                <option>Acari</option>
+                <option>Anchieta</option>
+                <option>Barros Filho</option>
+                <option>Bento Ribeiro</option>
+                <option>Brás de Pina</option>
+                <option>Campinho</option>
+                <option>Cavalcanti</option>
+                <option>Cascadura</option>
+                <option>Coelho Neto</option>
+                <option>Colégio</option>
+                <option>Complexo do Alemão</option>
+                <option>Cordovil</option>
+                <option>Costa Barros</option>
+                <option>Engenheiro Leal</option>
+                <option>Engenho da Rainha</option>
+                <option>Guadalupe</option>
+                <option>Honório Gurgel</option>
+                <option>Inhaúma</option>
+                <option>Irajá</option>
+                <option>Jardim América</option>
+                <option>Madureira</option>
+                <option>Marechal Hermes</option>
+                <option>Oswaldo Cruz</option>
+                <option>Parada de Lucas</option>
+                <option>Parque Anchieta</option>
+                <option>Parque Colúmbia</option>
+                <option>Pavuna</option>
+                <option>Penha</option>
+                <option>Penha Circular</option>
+                <option>Quintino Bocaiuva</option>
+                <option>Ricardo de Albuquerque</option>
+                <option>Rocha Miranda</option>
+                <option>Tomás Coelho</option>
+                <option>Turiaçu</option>
+                <option>Vaz Lobo</option>
+                <option>Vicente de Carvalho</option>
+                <option>Vigário Geral</option>
+                <option>Vila da Penha</option>
+                <option>Vila Kosmos</option>
+                <option>Vista Alegre</option>
+
+              </select>
+            </div>
+          </div>
+
+          <hr class="mb-4">
+          <h4 class="mb-3">Período para Contato</h4>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="manha">
+            <label class="custom-control-label" for="manha">Manhã</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="tarde">
+            <label class="custom-control-label" for="tarde">Tarde</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="noite">
+            <label class="custom-control-label" for="noite">Noite</label>
+          </div>
+          <hr class="mb-4">
+
+          <h4 class="mb-3">Autoriza contato por telefone</h4>
+
+          <div class="d-block my-3">
+            <div class="custom-control custom-radio">
+              <input id="credito" name="contato-telefone" type="radio" class="custom-control-input" checked="">
+              <label class="custom-control-label" for="credito">Sim</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="debito" name="contato-telefone" type="radio" class="custom-control-input">
+              <label class="custom-control-label" for="debito">Não</label>
+            </div>
+          </div>
+          <hr class="mb-4">
+
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Enviar Dados</button>
+        </form>
+      </div>
+    </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small"></footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/bootstrap-datepicker.pt-BR.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/holder.min.js"></script>
+  <script src="js/validaTelefone.js"></script>
+  <script src="js/select2/i18n/pt-BR.js"></script>
+  <script>
+      (function () {
+        'use strict';
+
+        $(document).ready(function () {
+          // mascara de telefone
+          var maskBehavior = function (val) {
+            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+          },
+            options = {
+              onKeyPress: function (val, e, field, options) {
+                field.mask(maskBehavior.apply({}, arguments), options);
+              }
+            };
+          $('#telefone').mask(maskBehavior, options);
+
+          // seletor de data
+          $('#data-de-nascimento').datepicker({
+            language: 'pt-BR'
+          });
+
+          // selecionar bairro
+          $('#bairro').select2({
+            theme: 'bootstrap4',
+            language: 'pt-br',
+          });
+
+          // desativar o envio do formulário, se tiver algum campo inválido.
+          var form = $('.needs-validation')[0];
+          $(document).on('submit', form, function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            if (validaTelefone($('#telefone').val()) === false) {
+              $('#telefone').closest('div').find('.invalid-feedback').show()
+            } else {
+              $('#telefone').closest('div').find('.invalid-feedback').hide()
+            }
+            form.classList.add('was-validated');
+          });
+        });
+      })();
+  </script>
+</body>
+
+</html>
